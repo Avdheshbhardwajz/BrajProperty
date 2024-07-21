@@ -3,9 +3,9 @@ import axios from "axios";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
-    contactNumber: "",
+    phone: "",
     message: "",
     address: "",
   });
@@ -30,19 +30,19 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post(
-        "https://brajproperty-backend.onrender.com/contact",
+        `${import.meta.env.VITE_BACKEND_URL}/contact`,
         formData
       );
       setSuccess("Form submitted successfully!");
       setFormData({
-        name: "",
+        username: "",
         email: "",
-        contactNumber: "",
+        phone: "",
         message: "",
         address: "",
       });
     } catch (err) {
-      console.error(
+      console.log(
         "Error submitting form:",
         err.response ? err.response.data : err.message
       );
@@ -66,7 +66,7 @@ const ContactForm = () => {
         </label>
         <input
           type="text"
-          name="name"
+          name="username"
           value={formData.name}
           onChange={handleChange}
           required
@@ -92,7 +92,7 @@ const ContactForm = () => {
         </label>
         <input
           type="text"
-          name="contactNumber"
+          name="phone"
           value={formData.contactNumber}
           onChange={handleChange}
           required

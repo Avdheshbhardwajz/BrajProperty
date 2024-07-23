@@ -19,7 +19,8 @@ const Properties = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetchData("https://brajproperty-backend.onrender.com/property");
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    fetchData(`${backendUrl}/property`);
   }, []);
   return (
     <div className="text-center flex flex-col items-center content-center">

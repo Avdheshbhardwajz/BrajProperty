@@ -11,10 +11,9 @@ const UserDetails = () => {
   }, []);
 
   const fetchUsers = async () => {
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
     try {
-      const response = await axios.get(
-        "https://brajproperty-backend.onrender.com/contact"
-      );
+      const response = await axios.get(`${backendUrl}/contact`);
       setUsers(response.data);
     } catch (error) {
       console.error("Error fetching users:", error);

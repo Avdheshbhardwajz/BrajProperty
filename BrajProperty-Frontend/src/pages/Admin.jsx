@@ -10,24 +10,32 @@ const Admin = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  // Check if the backend URL environment variable is defined
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  if (!backendUrl) {
+    console.error("VITE_BACKEND_URL is not defined");
+    return null;
+  }
+
   const handleLogin = async () => {
     setLoading(true);
     try {
-      const response = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/admin/login`,
-        { email, password }
-      );
+      const response = await axios.post(`${backendUrl}/admin/login`, {
+        email,
+        password,
+      });
       const { token } = response.data;
       localStorage.setItem("authToken", token);
       setIsAuthenticated(true);
       navigate("/manager"); // Redirect to the route manager page
-      console.log("login working");
     } catch (error) {
       console.error(
         "Login error:",
         error.response ? error.response.data : error.message
       );
-      alert("Invalid credentials or server error");
+      alert(
+        error.response?.data?.message || "Invalid credentials or server error"
+      );
     } finally {
       setLoading(false);
     }

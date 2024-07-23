@@ -21,12 +21,13 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetchData("https://brajproperty-backend.onrender.com/property");
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    fetchData(`${backendUrl}/property`);
   }, []);
 
   return (
     <>
-      <Banner imglink="BrajProperty-Frontend/src/assets/WhatsApp Image 2024-07-23 at 12.28.54_2632e60d.jpg" />
+      <Banner imglink="src\assets\WhatsApp Image 2024-07-23 at 12.28.54_7da8d453.jpg" />
       {/* main focus section starting here  */}
       {/* <div className="border-black border-2  flex flex-col items-center content-center justify-center gap-y-4 gap-x-4 bg-[#caf0f8] py-16  text-center p-4">
         <div className="mb-4 flex flex-col gap-y-6 border-2 border-black p-4 max-w-[70%] min-w-[400px]">
@@ -107,8 +108,8 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <img
-              className="max-w-[250px] border-2 border-black"
-              src="https://cdn5.vectorstock.com/i/1000x1000/41/69/colorful-flat-residential-houses-vector-22664169.jpg"
+              className="max-w-[250px]"
+              src="src\assets\buy (1).png"
               alt="Buy a Home"
             />
             <h3 className="font-bold text-lg text-[#03045e]">Buy a Home</h3>
@@ -130,8 +131,8 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <img
-              className="max-w-[250px] border-2 border-black"
-              src="https://cdn5.vectorstock.com/i/1000x1000/41/69/colorful-flat-residential-houses-vector-22664169.jpg"
+              className="max-w-[250px]"
+              src="src\assets\buy-a-house.png"
               alt="Sell a Home"
             />
             <h3 className="font-bold text-lg text-[#03045e]">Sell a Home</h3>

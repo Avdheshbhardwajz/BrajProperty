@@ -21,7 +21,7 @@ export default function Navbarr() {
       <div className="flex items-center">
         <Link to="/">
           <img
-            src="src/assets/WhatsApp_Image_2024-07-23_at_12.28.53_ed33313f-removebg-preview.png"
+            src="https://github.com/Avdheshbhardwajz/BrajProperty/blob/main/BrajProperty-Frontend/src/assets/WhatsApp_Image_2024-07-23_at_12.28.53_ed33313f-removebg-preview.png?raw=true"
             className="mr-3 font-poppins max-w-[20%] "
             alt="Brand logo"
           />

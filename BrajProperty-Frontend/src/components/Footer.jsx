@@ -17,10 +17,10 @@ const Footer = () => {
     <div className="w-[99vw] py-16 border-black border-2 bg-[#03045e] min-h-[300px] px-[5%]  flex flex-row justify-center items-center content-center gap-x-20 gap-y-10 flex-wrap box-border">
       <div className=" flex-col justify-center  text-white  min-w-[350px] max-w-[400px] p-4">
         <h1 className="font-poppins text-xl font-bold text-center">
-          Braj Property
+          Diamond Group
         </h1>
         <p className="font-poppins text-center">
-          On this holy land of Vrindavan, Braj Property gives you a golden
+          On this holy land of Vrindavan, Diamond Group gives you a golden
           opportunity to build a home in Vrindavan which is at a very prime
           location inside Vrindavan. We give the best option to our customers
           which will be available at a very good rate.
@@ -44,15 +44,16 @@ const Footer = () => {
         <p className="text-xl font-bold">Contact</p>
         <div className="flex flex-row items-center text-center gap-x-2">
           <FontAwesomeIcon icon={faLocationDot} />
-          Near by Vrindavan
+          Diamond Properties, Roadways Colony, Infront of Pratap Bagicha Near
+          Shree Ji Baba School, Goverdhan Road Mathura 281004
         </div>
         <div className="flex flex-row items-center text-center gap-x-2">
           <FontAwesomeIcon icon={faAddressBook} />
-          91745358358
+          917017854813
         </div>
         <div className="flex flex-row items-center text-center gap-x-2">
           <FontAwesomeIcon icon={faEnvelope} />
-          Avdheshbhardwaj2004@gmail.com
+          diamondproperties75@gmail.com
         </div>
       </div>
     </div>

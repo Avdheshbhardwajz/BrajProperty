@@ -26,11 +26,7 @@ const Home = () => {
 
   return (
     <>
-      <Banner
-        imglink="https://swall.teahub.io/photos/small/223-2239768_full-hd-1080p-radha-god-krishna-love-flute.jpg"
-        heading="home heading will be here"
-        para="home para will be here "
-      />
+      <Banner imglink="src\assets\WhatsApp Image 2024-07-23 at 12.28.54_7da8d453.jpg" />
       {/* main focus section starting here  */}
       {/* <div className="border-black border-2  flex flex-col items-center content-center justify-center gap-y-4 gap-x-4 bg-[#caf0f8] py-16  text-center p-4">
         <div className="mb-4 flex flex-col gap-y-6 border-2 border-black p-4 max-w-[70%] min-w-[400px]">
@@ -93,7 +89,7 @@ const Home = () => {
             Our Main Focus
           </h2>
           <p className="font-poppins font-light text-xl  text-center text-[#03045e]">
-            At Braj Property, we cater to all your real estate needs. From
+            At Diamond Group, we cater to all your real estate needs. From
             finding your dream home to renting or selling properties, our expert
             team ensures a seamless experience every step of the way.
           </p>
@@ -117,8 +113,8 @@ const Home = () => {
             />
             <h3 className="font-bold text-lg text-[#03045e]">Buy a Home</h3>
             <p className="text-[#03045e]">
-              Over homes for sale available on the website, we can match you
-              with a house you will want to call home.
+              Over homes to Buy available on the website, we can match you with
+              a house you will want to call home.
             </p>
             <Link
               className="border-2 border-black px-4 py-2 bg-[#03045e] text-white"

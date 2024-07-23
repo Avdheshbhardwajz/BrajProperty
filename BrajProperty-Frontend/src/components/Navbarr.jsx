@@ -1,62 +1,115 @@
-"use client";
-
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Navbar } from "flowbite-react";
+import { motion, AnimatePresence } from "framer-motion";
 import "../index.css"; // Ensure you import the global CSS file
 
 export default function Navbarr() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const menuVariants = {
+    hidden: { x: "-100%" },
+    visible: { x: 0 },
+    exit: { x: "-100%" },
+  };
+
   return (
-    <div className="px-[10vw] bg-[#03045e]">
-      <Navbar fluid rounded className="bg-[#03045e] text-white" font-medium>
-        <Navbar.Brand as={Link} to="/">
+    <div className="bg-[#03045e] flex flex-row justify-between px-[5%] items-center p-4">
+      <div className="flex items-center">
+        <Link to="/">
           <img
-            src="https://brajproperty.in/assets/images/logo/Braj-Property-Logo.png"
-            className="mr-3 h-9 sm:h-14 font-poppins"
+            src="src/assets/WhatsApp_Image_2024-07-23_at_12.28.53_ed33313f-removebg-preview.png"
+            className="mr-3 font-poppins max-w-[20%] "
             alt="Brand logo"
           />
-        </Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse>
-          <Navbar.Link
-            as={Link}
-            to="/"
-            active
-            className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium"
+        </Link>
+      </div>
+      <button
+        onClick={toggleMenu}
+        className="text-white focus:outline-none lg:hidden"
+      >
+        &#9776;
+      </button>
+      <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-between lg:static lg:w-auto">
+        <Link
+          to="/"
+          className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium lg:mx-4"
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium lg:mx-4"
+        >
+          About
+        </Link>
+        <Link
+          to="/properties"
+          className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium lg:mx-4"
+        >
+          Properties
+        </Link>
+        <Link
+          to="/contact"
+          className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium lg:mx-4"
+        >
+          Contact Us
+        </Link>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="fixed top-0 left-0 w-full h-full bg-[#03045e] z-50 p-4 lg:hidden"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={menuVariants}
+            transition={{ type: "tween", duration: 0.5 }}
           >
-            Home
-          </Navbar.Link>
-          <Navbar.Link
-            as={Link}
-            to="/about"
-            className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium"
-          >
-            About
-          </Navbar.Link>
-          <Navbar.Link
-            as={Link}
-            to="/properties"
-            className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium"
-          >
-            Properties
-          </Navbar.Link>
-          <Navbar.Link
-            as={Link}
-            to="/contact"
-            className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium"
-          >
-            Contact Us
-          </Navbar.Link>
-          {/* <Navbar.Link
-            as={Link}
-            to="/"
-            active
-            className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium"
-          >
-            Admin
-          </Navbar.Link> */}
-        </Navbar.Collapse>
-      </Navbar>
+            <button
+              onClick={toggleMenu}
+              className="text-white text-2xl absolute top-4 right-4 focus:outline-none"
+            >
+              &times;
+            </button>
+            <div className="flex flex-col items-center justify-center h-full space-y-6">
+              <Link
+                to="/"
+                className="font-poppins text-2xl text-white hover:text-[#caf0f8] font-medium"
+                onClick={toggleMenu}
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="font-poppins text-2xl text-white hover:text-[#caf0f8] font-medium"
+                onClick={toggleMenu}
+              >
+                About
+              </Link>
+              <Link
+                to="/properties"
+                className="font-poppins text-2xl text-white hover:text-[#caf0f8] font-medium"
+                onClick={toggleMenu}
+              >
+                Properties
+              </Link>
+              <Link
+                to="/contact"
+                className="font-poppins text-2xl text-white hover:text-[#caf0f8] font-medium"
+                onClick={toggleMenu}
+              >
+                Contact Us
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

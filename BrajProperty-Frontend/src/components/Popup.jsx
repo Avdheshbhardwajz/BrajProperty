@@ -92,7 +92,7 @@ const Popup = () => {
             <div className=" min-w-[40%] max-w-[50%]">
               <img
                 className=""
-                src="https://brajproperty.in/assets/images/poster/nivesh.jpg"
+                src="src\assets\diamondproperties75@gmail.com.jpg"
               />
             </div>
           </motion.div>

@@ -23,11 +23,7 @@ const Properties = () => {
   }, []);
   return (
     <div className="text-center flex flex-col items-center content-center">
-      <Banner
-        imglink="https://wallpapercave.com/wp/wp3440991.jpg"
-        heading="properties heading will be here"
-        para="properties para will be here "
-      />
+      <Banner imglink="src\assets\WhatsApp Image 2024-07-23 at 12.28.55_da99e19f.jpg" />
       <div className=" px-4 py-16 max-w-[80%] flex flex-row gap-4 flex-wrap justify-between items-center content-center">
         {data.map((item, index) => (
           <Card {...item} key={index} />

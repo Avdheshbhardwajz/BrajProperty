@@ -12,11 +12,7 @@ const Contact = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Banner
-          imglink="https://th.bing.com/th/id/R.b851ce4296d031b23c1aad7473b42098?rik=GsOCFTvScoYzSQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-3Y9GOZCp3h0%2fVWQD-XjGRhI%2fAAAAAAAAJAE%2fkxTaA4CN0RM%2fs1600%2fradha-and-god-krishna-image.jpg&ehk=sKb1RPIOw0fQOqGI%2bpotkrYx7L3V%2bNOV3EHSoruxpHQ%3d&risl=&pid=ImgRaw&r=0"
-          heading="contact heading will be here"
-          para="contact para will be here "
-        />
+        <Banner imglink="src\assets\WhatsApp Image 2024-07-23 at 12.28.54_7da8d453.jpg" />
       </motion.div>
 
       {/* Contact section starts here */}
@@ -46,7 +42,10 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="font-bold text-lg text-[#03045e]">Address:-</h3>
-            <p>Infront of kailash nagar Parikrama marg Vrindavan</p>
+            <p>
+              Diamond Properties, Roadways Colony, Infront of Pratap Bagicha
+              Near Shree Ji Baba School, Goverdhan Road Mathura 281004
+            </p>
           </motion.div>
           <motion.div
             className="border-2 border-black p-4"
@@ -55,7 +54,7 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="font-bold text-lg text-[#03045e]">Mobile:-</h3>
-            <p>+91-8394953005</p>
+            <p>+91-7017854813</p>
           </motion.div>
           <motion.div
             className="border-2 border-black p-4"
@@ -64,7 +63,7 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="font-bold text-lg text-[#03045e]">Email:-</h3>
-            <p>salesbrajproperty@gmail.com</p>
+            <p> diamondproperties75@gmail.com</p>
           </motion.div>
         </motion.div>
 

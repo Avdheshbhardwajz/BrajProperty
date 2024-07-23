@@ -7,11 +7,7 @@ import Tabs from "../components/Tabs";
 const About = () => {
   return (
     <div>
-      <Banner
-        imglink="https://i.pinimg.com/736x/97/e3/93/97e393fabf81d3de2336c58ab2e2da8e.jpg"
-        heading="about heading will be here"
-        para="about para will be here "
-      />
+      <Banner imglink="src\assets\WhatsApp Image 2024-07-23 at 12.28.54_2632e60d.jpg" />
 
       {/* About Us Section */}
       <motion.div
@@ -27,10 +23,10 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h2 className="font-bold text-3xl text-[#03045e]">
-            About Braj Property
+            About Diamond Group
           </h2>
           <p className="font-light text-md text-[#03045e]">
-            At Braj Property, we redefine the way you experience real estate.
+            At Diamond Group, we redefine the way you experience real estate.
             Our agency stands as a beacon of innovation, integrity, and
             expertise in the dynamic world of property transactions.
           </p>
@@ -83,7 +79,7 @@ const About = () => {
         >
           <h2 className="font-bold text-3xl">Our Mission:</h2>
           <p className="font-light text-md">
-            At Braj Property, we redefine the way you experience real estate.
+            At Diamond Group, we redefine the way you experience real estate.
             Our agency stands as a beacon of innovation, integrity, and
             expertise
           </p>

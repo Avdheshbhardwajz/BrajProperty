@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <>
-      <Banner imglink="src\assets\WhatsApp Image 2024-07-23 at 12.28.54_7da8d453.jpg" />
+      <Banner imglink="https://github.com/Avdheshbhardwajz/BrajProperty/blob/main/BrajProperty-Frontend/src/assets/WhatsApp%20Image%202024-07-23%20at%2012.28.54_2632e60d.jpg" />
       {/* main focus section starting here  */}
       {/* <div className="border-black border-2  flex flex-col items-center content-center justify-center gap-y-4 gap-x-4 bg-[#caf0f8] py-16  text-center p-4">
         <div className="mb-4 flex flex-col gap-y-6 border-2 border-black p-4 max-w-[70%] min-w-[400px]">

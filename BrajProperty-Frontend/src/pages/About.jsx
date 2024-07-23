@@ -7,7 +7,7 @@ import Tabs from "../components/Tabs";
 const About = () => {
   return (
     <div>
-      <Banner imglink="src\assets\WhatsApp Image 2024-07-23 at 12.28.54_2632e60d.jpg" />
+      <Banner imglink="https://github.com/Avdheshbhardwajz/BrajProperty/blob/main/BrajProperty-Frontend/src/assets/WhatsApp%20Image%202024-07-23%20at%2012.28.54_2632e60d.jpg?raw=true" />
 
       {/* About Us Section */}
       <motion.div

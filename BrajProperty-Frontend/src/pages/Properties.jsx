@@ -24,7 +24,7 @@ const Properties = () => {
   }, []);
   return (
     <div className="text-center flex flex-col items-center content-center">
-      <Banner imglink="src\assets\WhatsApp Image 2024-07-23 at 12.28.55_da99e19f.jpg" />
+      <Banner imglink="https://github.com/Avdheshbhardwajz/BrajProperty/blob/main/BrajProperty-Frontend/src/assets/WhatsApp%20Image%202024-07-23%20at%2012.28.54_7da8d453.jpg?raw=true" />
       <div className=" px-4 py-16 max-w-[80%] flex flex-row gap-4 flex-wrap justify-between items-center content-center">
         {data.map((item, index) => (
           <Card {...item} key={index} />

@@ -109,7 +109,7 @@ const Home = () => {
           >
             <img
               className="max-w-[250px]"
-              src="src\assets\buy (1).png"
+              src="https://github.com/Avdheshbhardwajz/BrajProperty/blob/main/BrajProperty-Frontend/src/assets/buy%20(1).png?raw=true"
               alt="Buy a Home"
             />
             <h3 className="font-bold text-lg text-[#03045e]">Buy a Home</h3>

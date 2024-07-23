@@ -12,7 +12,7 @@ const Contact = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Banner imglink="src\assets\WhatsApp Image 2024-07-23 at 12.28.54_7da8d453.jpg" />
+        <Banner imglink="https://github.com/Avdheshbhardwajz/BrajProperty/blob/main/BrajProperty-Frontend/src/assets/WhatsApp%20Image%202024-07-23%20at%2012.28.55_da99e19f.jpg?raw=true" />
       </motion.div>
 
       {/* Contact section starts here */}

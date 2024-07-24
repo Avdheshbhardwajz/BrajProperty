@@ -17,7 +17,7 @@ const Contact = () => {
 
       {/* Contact section starts here */}
       <motion.div
-        className="p-4 flex flex-row gap-12 justify-center items-center content-center flex-wrap py-20"
+        className="p-4 flex bg-[#101225] flex-row gap-12 justify-center items-center content-center flex-wrap py-20"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -28,42 +28,42 @@ const Contact = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="font-poppins text-3xl font-bold text-[#03045e]">
+          <h2 className="font-poppins text-3xl font-bold text-[#b4973a]">
             Get In Touch
           </h2>
-          <p className="font-poppins text-lg font-light">
+          <p className="font-poppins text-lg font-light text-[#b4973a]">
             Let's start building your dreams together—reach out to us and let
             the journey to your ideal property begin.
           </p>
           <motion.div
-            className="border-2 border-black p-4"
+            className="border-2 border-[#b4973a] p-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="font-bold text-lg text-[#03045e]">Address:-</h3>
-            <p>
+            <h3 className="font-bold text-lg text-[#b4973a]">Address:-</h3>
+            <p className="text-[#b4973a]">
               Diamond Properties, Roadways Colony, Infront of Pratap Bagicha
               Near Shree Ji Baba School, Goverdhan Road Mathura 281004
             </p>
           </motion.div>
           <motion.div
-            className="border-2 border-black p-4"
+            className="border-2 border-[#b4973a] p-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="font-bold text-lg text-[#03045e]">Mobile:-</h3>
-            <p>+91-7017854813</p>
+            <h3 className="font-bold text-lg text-[#b4973a]">Mobile:-</h3>
+            <p className="text-[#b4973a]">+91-7017854813</p>
           </motion.div>
           <motion.div
-            className="border-2 border-black p-4"
+            className="border-2 border-[#b4973a] p-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="font-bold text-lg text-[#03045e]">Email:-</h3>
-            <p> diamondproperties75@gmail.com</p>
+            <h3 className="font-bold text-lg text-[#b4973a]">Email:-</h3>
+            <p className="text-[#b4973a]"> diamondproperties75@gmail.com</p>
           </motion.div>
         </motion.div>
 

@@ -42,17 +42,17 @@ const Feedback = () => {
           {review.length > 0 && (
             <motion.div
               key={currentIndex}
-              className="absolute inset-0 flex items-center justify-center border-4 border-black "
+              className="absolute inset-0 flex items-center justify-center border-4 border-[#b4973a] "
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.7 }}
             >
               <div className="text-center font-poppins p-4">
-                <p className="text-2xl font-bold mb-4 text-gray-800">
+                <p className="text-2xl font-bold mb-4 text-[#b4973a]">
                   "{review[currentIndex]?.feedback}"
                 </p>
-                <span className="mt-2 font-poppins font-light text-gray-[#03045e] text-lg text-[#0077b6]">
+                <span className="mt-2 font-poppins font-light text-gray-[#03045e] text-lg text-[#b4973a]">
                   - {review[currentIndex]?.username}
                 </span>
               </div>

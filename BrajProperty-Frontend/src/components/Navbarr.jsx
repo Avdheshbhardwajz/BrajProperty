@@ -17,7 +17,7 @@ export default function Navbarr() {
   };
 
   return (
-    <div className="bg-[#03045e] flex flex-row justify-between px-[5%] items-center p-4">
+    <div className="bg-[#101225] flex flex-row justify-between px-[5%] items-center p-4">
       <div className="flex items-center">
         <Link to="/">
           <img
@@ -36,27 +36,33 @@ export default function Navbarr() {
       <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-between lg:static lg:w-auto">
         <Link
           to="/"
-          className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium lg:mx-4"
+          className="font-poppins text-xl text-[#b4973a] hover:text-[#caf0f8] font-medium lg:mx-4"
         >
           Home
         </Link>
         <Link
           to="/about"
-          className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium lg:mx-4"
+          className="font-poppins text-xl text-[#b4973a] hover:text-[#caf0f8] font-medium lg:mx-4"
         >
           About
         </Link>
         <Link
           to="/properties"
-          className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium lg:mx-4"
+          className="font-poppins text-xl text-[#b4973a] hover:text-[#caf0f8] font-medium lg:mx-4"
         >
           Properties
         </Link>
         <Link
           to="/contact"
-          className="font-poppins text-xl text-white hover:text-[#caf0f8] font-medium lg:mx-4"
+          className="font-poppins text-xl text-[#b4973a] hover:text-[#caf0f8] font-medium lg:mx-4"
         >
           Contact Us
+        </Link>
+        <Link
+          to="/admin"
+          className="font-poppins text-xl text-[#b4973a] hover:text-[#caf0f8] font-medium lg:mx-4"
+        >
+          login
         </Link>
       </div>
 
@@ -64,7 +70,7 @@ export default function Navbarr() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed top-0 left-0 w-full h-full bg-[#03045e] z-50 p-4 lg:hidden"
+            className="fixed top-0 left-0 w-full h-full bg-[#101225] z-50 p-4 lg:hidden"
             initial="hidden"
             animate="visible"
             exit="exit"
@@ -80,31 +86,38 @@ export default function Navbarr() {
             <div className="flex flex-col items-center justify-center h-full space-y-6">
               <Link
                 to="/"
-                className="font-poppins text-2xl text-white hover:text-[#caf0f8] font-medium"
+                className="font-poppins text-2xl text-[#b4973a] hover:text-[#caf0f8] font-medium"
                 onClick={toggleMenu}
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="font-poppins text-2xl text-white hover:text-[#caf0f8] font-medium"
+                className="font-poppins text-2xl text-[#b4973a] hover:text-[#caf0f8] font-medium"
                 onClick={toggleMenu}
               >
                 About
               </Link>
               <Link
                 to="/properties"
-                className="font-poppins text-2xl text-white hover:text-[#caf0f8] font-medium"
+                className="font-poppins text-2xl text-[#b4973a] hover:text-[#caf0f8] font-medium"
                 onClick={toggleMenu}
               >
                 Properties
               </Link>
               <Link
                 to="/contact"
-                className="font-poppins text-2xl text-white hover:text-[#caf0f8] font-medium"
+                className="font-poppins text-2xl text-[#b4973a] hover:text-[#caf0f8] font-medium"
                 onClick={toggleMenu}
               >
                 Contact Us
+              </Link>
+              <Link
+                to="/admin"
+                className="font-poppins text-2xl text-[#b4973a] hover:text-[#caf0f8] font-medium"
+                onClick={toggleMenu}
+              >
+                Login
               </Link>
             </div>
           </motion.div>

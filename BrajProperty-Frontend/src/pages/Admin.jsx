@@ -83,12 +83,12 @@ const Admin = () => {
           >
             {loading ? "Logging in..." : "Login"}
           </button>
-          <button
+          {/* <button
             onClick={redirectToRegister}
             className="w-full py-2 mt-4 bg-green-500 text-white rounded-md hover:bg-green-600 transition"
           >
             Register
-          </button>
+          </button> */}
         </motion.div>
       ) : (
         <motion.div

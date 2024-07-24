@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
+import popupImg from "../assets/PopupFinal.jpg";
 
 const Popup = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -29,7 +30,7 @@ const Popup = () => {
           transition={{ duration: 0.3 }}
         >
           <motion.div
-            className="bg-white p-6 rounded-lg shadow-lg min-w-[50%] max-w-[70%] min-h-[50%] w-full relative flex-wrap-reverse text-center  font-poppins flex flex-row gap-6 justify-center items-center content-center"
+            className="bg-white p-6 rounded-lg shadow-lg min-w-[50%] max-w-[90%] min-h-[50%] w-full relative flex-wrap-reverse text-center  font-poppins flex flex-row gap-6 justify-center items-center content-center"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
@@ -89,11 +90,8 @@ const Popup = () => {
                 </div>
               </form>
             </div>
-            <div className=" min-w-[40%] max-w-[50%]">
-              <img
-                className=""
-                src="https://github.com/Avdheshbhardwajz/BrajProperty/blob/main/BrajProperty-Frontend/src/assets/diamondproperties75@gmail.com.jpg?raw=true"
-              />
+            <div className=" min-w-[40%] max-w-[100%] md:max-w-[50%]">
+              <img className="" src={popupImg} />
             </div>
           </motion.div>
         </motion.div>

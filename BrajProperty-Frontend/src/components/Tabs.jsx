@@ -43,11 +43,11 @@ const Tabs = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-4 bg-[#00b4d8] shadow-md rounded-lg font-poppins">
+    <div className="max-w-lg mx-auto p-4 bg-[#b4973a] shadow-md rounded-lg font-poppins">
       <div className="flex border-b mb-4">
         <button
           className={`px-4 py-2 ${
-            activeTab === "Tab1" ? "border-b-2 border-blue-500" : ""
+            activeTab === "Tab1" ? "border-b-2 border-[#101225]" : ""
           }`}
           onClick={() => handleTabClick("Tab1")}
         >
@@ -55,7 +55,7 @@ const Tabs = () => {
         </button>
         <button
           className={`px-4 py-2 ${
-            activeTab === "Tab2" ? "border-b-2 border-blue-500" : ""
+            activeTab === "Tab2" ? "border-b-2 border-[#101225]" : ""
           }`}
           onClick={() => handleTabClick("Tab2")}
         >
@@ -63,7 +63,7 @@ const Tabs = () => {
         </button>
         <button
           className={`px-4 py-2 ${
-            activeTab === "Tab3" ? "border-b-2 border-blue-500" : ""
+            activeTab === "Tab3" ? "border-b-2 border-[#101225]" : ""
           }`}
           onClick={() => handleTabClick("Tab3")}
         >

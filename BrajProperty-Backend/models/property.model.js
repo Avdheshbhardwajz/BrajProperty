@@ -6,7 +6,8 @@ const propertySchema = mongoose.Schema({
   location: { type: String, required: true },
   details: { type: String, required: true },
   price: { type: Number, required: true },
-  pdfLink: { type: String, required: true }
+  pdfLink: { type: String, required: true },
+  video: [{type:String}]
 });
 
 const PropertyModel = mongoose.model("property", propertySchema);

@@ -12,16 +12,12 @@ const Contact = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Banner
-          imglink="https://th.bing.com/th/id/R.b851ce4296d031b23c1aad7473b42098?rik=GsOCFTvScoYzSQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-3Y9GOZCp3h0%2fVWQD-XjGRhI%2fAAAAAAAAJAE%2fkxTaA4CN0RM%2fs1600%2fradha-and-god-krishna-image.jpg&ehk=sKb1RPIOw0fQOqGI%2bpotkrYx7L3V%2bNOV3EHSoruxpHQ%3d&risl=&pid=ImgRaw&r=0"
-          heading="contact heading will be here"
-          para="contact para will be here "
-        />
+        <Banner imglink="https://github.com/Avdheshbhardwajz/BrajProperty/blob/main/BrajProperty-Frontend/src/assets/WhatsApp%20Image%202024-07-23%20at%2012.28.55_da99e19f.jpg?raw=true" />
       </motion.div>
 
       {/* Contact section starts here */}
       <motion.div
-        className="p-4 flex flex-row gap-12 justify-center items-center content-center flex-wrap py-20"
+        className="p-4 flex bg-[#101225] flex-row gap-12 justify-center items-center content-center flex-wrap py-20"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -32,39 +28,42 @@ const Contact = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="font-poppins text-3xl font-bold text-[#03045e]">
+          <h2 className="font-poppins text-3xl font-bold text-[#b4973a]">
             Get In Touch
           </h2>
-          <p className="font-poppins text-lg font-light">
+          <p className="font-poppins text-lg font-light text-[#b4973a]">
             Let's start building your dreams together—reach out to us and let
             the journey to your ideal property begin.
           </p>
           <motion.div
-            className="border-2 border-black p-4"
+            className="border-2 border-[#b4973a] p-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="font-bold text-lg text-[#03045e]">Address:-</h3>
-            <p>Infront of kailash nagar Parikrama marg Vrindavan</p>
+            <h3 className="font-bold text-lg text-[#b4973a]">Address:-</h3>
+            <p className="text-[#b4973a]">
+              Diamond Properties, Roadways Colony, Infront of Pratap Bagicha
+              Near Shree Ji Baba School, Goverdhan Road Mathura 281004
+            </p>
           </motion.div>
           <motion.div
-            className="border-2 border-black p-4"
+            className="border-2 border-[#b4973a] p-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="font-bold text-lg text-[#03045e]">Mobile:-</h3>
-            <p>+91-8394953005</p>
+            <h3 className="font-bold text-lg text-[#b4973a]">Mobile:-</h3>
+            <p className="text-[#b4973a]">+91-7017854813</p>
           </motion.div>
           <motion.div
-            className="border-2 border-black p-4"
+            className="border-2 border-[#b4973a] p-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="font-bold text-lg text-[#03045e]">Email:-</h3>
-            <p>salesbrajproperty@gmail.com</p>
+            <h3 className="font-bold text-lg text-[#b4973a]">Email:-</h3>
+            <p className="text-[#b4973a]"> diamondproperties75@gmail.com</p>
           </motion.div>
         </motion.div>
 

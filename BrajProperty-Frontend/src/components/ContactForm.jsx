@@ -55,26 +55,26 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-lg p-8 border-2 border-[#03045e] font-poppins"
+      className="max-w-lg p-8 border-2 border-[#b4973a] font-poppins"
     >
-      <h2 className="text-2xl font-bold mb-4 text-[#03045e]">Contact Us</h2>
+      <h2 className="text-2xl font-bold mb-4 text-[#b4973a]">Contact Us</h2>
       {error && <p className="text-red-500 mb-4">{error}</p>}
       {success && <p className="text-green-500 mb-4">{success}</p>}
       <div className="mb-4">
-        <label className="block text-md font-bold mb-2 text-[#03045e]">
+        <label className="block text-md font-bold mb-2 text-[#b4973a]">
           Name:
         </label>
         <input
           type="text"
           name="username"
-          value={formData.name}
+          value={formData.username}
           onChange={handleChange}
           required
           className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div className="mb-4">
-        <label className="block text-md font-bold mb-2 text-[#03045e]">
+        <label className="block text-md font-bold mb-2 text-[#b4973a]">
           Email:
         </label>
         <input
@@ -87,20 +87,20 @@ const ContactForm = () => {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-md font-bold mb-2 text-[#03045e]">
+        <label className="block text-md font-bold mb-2 text-[#b4973a]">
           Contact Number:
         </label>
         <input
           type="text"
           name="phone"
-          value={formData.contactNumber}
+          value={formData.phone}
           onChange={handleChange}
           required
           className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div className="mb-4">
-        <label className="block text-md font-bold mb-2 text-[#03045e]">
+        <label className="block text-md font-bold mb-2 text-[#b4973a]">
           Message:
         </label>
         <textarea
@@ -112,7 +112,7 @@ const ContactForm = () => {
         ></textarea>
       </div>
       <div className="mb-4">
-        <label className="block text-md font-bold mb-2 text-[#03045e]">
+        <label className="block text-md font-bold mb-2 text-[#b4973a]">
           Address:
         </label>
         <textarea
@@ -125,7 +125,7 @@ const ContactForm = () => {
       </div>
       <button
         type="submit"
-        className="w-full bg-[#03045e] text-white py-2 rounded-lg hover:bg-[#0077b6] transition-colors"
+        className="w-full bg-[#b4973a] text-white py-2 rounded-lg hover:bg-[#0077b6] transition-colors"
         disabled={loading}
       >
         {loading ? "Submitting..." : "Submit"}

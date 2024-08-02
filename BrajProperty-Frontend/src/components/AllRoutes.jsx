@@ -6,6 +6,8 @@ import Properties from "../pages/Properties";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import Admin from "../pages/Admin";
+import RegisterAdmin from "./RegisterAdmin";
+import PropertyManager from "./PropertyManager";
 
 const AllRoutes = () => {
   return (
@@ -16,6 +18,8 @@ const AllRoutes = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
       <Route path="/admin" element={<Admin />} />
+      <Route path="/register" element={<RegisterAdmin />} />
+      <Route path="/manager" element={<PropertyManager />} />
     </Routes>
   );
 };

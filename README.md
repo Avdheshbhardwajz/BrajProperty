@@ -11,11 +11,7 @@ This project is a freelancing endeavor where we have meticulously crafted both t
 - [Features](#features)
 - [Roles & Contributions](#roles--contributions)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Screenshots](#screenshots)
-- [License](#license)
 - [Contact](#contact)
 
 ## Features
@@ -65,4 +61,12 @@ This project is a freelancing endeavor where we have meticulously crafted both t
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **React Router**: Routing library for React applications.
 
+
+## Contact
+For inquiries or collaborations, please reach out to us:
+
+- Karan Chauhan: karanchauhanji2003@gmail.com
+- Avdhesh Bharadwaj: avdhesh@gmail.com
+
+We hope you enjoy using Diamond Property! Thank you for your interest in our project.
 

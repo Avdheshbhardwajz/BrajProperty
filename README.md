@@ -6,14 +6,6 @@ Welcome to **Diamond Property** - a cutting-edge property dealing website that t
 
 This project is a freelancing endeavor where we have meticulously crafted both the front-end and back-end of the website to ensure a seamless user experience.
 
-## 📑 Table of Contents
-
-- [✨ Features](#features)
-- [👥 Roles & Contributions](#roles--contributions)
-- [🛠️ Technologies Used](#technologies-used)
-- [🖼️ Screenshots](#screenshots)
-- [📞 Contact](#contact)
-
 ## ✨ Features
 
 - **User-Friendly Interface** 🖥️: Navigate effortlessly through property listings with an intuitive UI.

@@ -58,6 +58,6 @@ This project is a freelancing endeavor where we have meticulously crafted both t
 For inquiries or collaborations, please reach out to us:
 
 - Karan Chauhan: ✉️ karanchauhanji2003@gmail.com
-- Avdhesh Bharadwaj: ✉️ avdhesh@gmail.com
+- Avdhesh Bharadwaj: ✉️ avdheshbhardwaj2004@gmail.com
 
 We hope you enjoy using Diamond Property! Thank you for your interest in our project. 😊
